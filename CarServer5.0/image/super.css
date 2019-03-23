@@ -1,0 +1,105 @@
+
+QCheckBox {
+	spacing: 2px; 
+}
+
+QCheckBox::indicator {
+	width: 20px;
+	height: 20px;
+}
+
+QCheckBox::indicator:unchecked {
+	image: url(:/image/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:checked {
+	image: url(:/image/checkbox_checked.png); 
+}
+QRadioButton {
+	spacing: 2px;
+}
+
+QRadioButton::indicator {
+	width: 15px; 
+	height: 15px; 
+}
+
+QRadioButton::indicator::unchecked {
+	image: url(:/image/radio_normal.png); 
+}
+
+QRadioButton::indicator::checked {
+	image: url(:/image/radio_selected.png); 
+}
+QComboBox{
+	border-radius: 3px;
+	padding: 1px 10px 1px 5px;
+	border: 1px solid #5CACEE;
+}
+
+QComboBox::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 15px; 
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-left-color: #5CACEE;
+}
+
+QComboBox::down-arrow {
+	image: url(:/image/array_down.png); 
+}
+QMenu::item {	
+	padding: 2px 12px 2px 12px;
+}
+
+QMenu::indicator {
+	width: 13px;
+	height: 13px;
+}
+
+QMenu::item:selected {
+	color: #F0F0F0;
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4D4D4D, stop:1 #292929); 
+}
+
+QMenu::separator {
+	height: 1px;
+	background: #636363;
+}
+QTreeView,QListView,QTableView{
+	border: 1px solid #636363; 
+	selection-background-color: #4D4D4D;
+	selection-color: #F0F0F0;
+}
+
+QTableWidget::item:selected {
+	color: #F0F0F0;
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4D4D4D, stop:1 #292929); 
+}
+
+QTableWidget::item:hover {
+	color: #F0F0F0;
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #636363, stop:1 #575757); 
+}
+
+QTableWidget::item {
+	padding: 5px; 
+	margin: 0px; 
+}
+QPushButton#minButton,QPushButton#closeButton,QPushButton#changeButton{
+	border-radius:0px;
+	color: #F0F0F0;
+	background-color:rgba(0,0,0,0);
+	border-style:none;
+}
+
+QPushButton#minButton,QPushButton#changeButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(25, 134, 199, 0), stop:1 #5CACEE);
+}
+
+QPushButton#closeButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(238, 0, 0, 128), stop:1 rgba(238, 44, 44, 255));
+}
